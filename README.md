@@ -2,7 +2,7 @@
 
 This is a circular link-list template class that I developed during the time that I was taking Data Structure course. First I started making this class as a way of practicing implementing link-list in C++. But later I started adding more features to it and I ended up actually using it for my other projects.
 
-This link list class works great on projects that elements are frequently need to be added or removed. Simillar to standard array or STL vector class, it supports element access through use of index referencing. 
+This link list class works great on projects that elements are frequently need to be added or removed. Simillar to standard array or STL vector class, it supports element access/modification through index referencing. 
 
 To declare a new variable use this syntax:
 
@@ -33,3 +33,11 @@ This feature is very benefitial for the situationss that you are required to acc
 
 One problem of link-list data structure is the ineffeciency of accessing random elements. Therefore accessing an element in a link-list requires O(n) time complexity.  
 This class has an improvement over a typical link-list implementation. It saves pointers to the last two accessed elements. So to access a new element, it calculates its distance to the first element pointer as well as the saved pointers,and pick the closest pointer to traverse. Therefore the sequential access will be in O(1) time complexity. Also for some sorting algorithms such as merge sort, this feature helps.
+
+This class also supoorts many fetures including:
+* adding and removing elements from the middle of the list by using ```myList.push(data, index)``` and ```myList.pop(index)```.
+* moving range of elements to a target index using ```myList.move(startIndex,endIndex,targetIndex)```.
+* move semantics.
+* moving range of elements from one CircularList object to another by using ```myList.extract(startIndex,endIndex,targetObject)```.
+* built-in merge sort algorithm.
+* custom sort comparison function.
