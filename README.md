@@ -10,20 +10,15 @@ To declare a new variable use this syntax:
 CircularList <datatype> myList;
 ```
 
-to add element to the end of the list:
+to add an element to the end of the list:
 
 ```c++
 myList.push_back(data);
 ```
-to access the element you just added:
+to access the element use index refrencing:
 
 ```c++
-myList[0];
-```
-or
-
-```c++
-myList.end();
+myList[index];
 ```
 
 Since it's circular, there is no way you can go out of bounds. You can use any integer number as an index (including negative numbers) and it will automatically points to the right element. For example, assume you have 'myList' variable and it already contains 10 elements. If you try to access the 11th element by using ```myList[10]``` syntax, it will simply point to the next element in the circle which is the first element and that is myList[0]. Likewise using myList[17] is equivalent to ```myList[7]```. Using negative numbers you simply are accessing the elements from the reverse direction. ```myList[-2]``` in this case will points to ```myList[8]```.
