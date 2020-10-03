@@ -1,8 +1,8 @@
 ## circularLinkList
 
-This is a circular link-list template class that I developed during the time that I was taking Data Structure course. First I started making this class as a way of practicing implementing link-list in C++. But later I started adding more features to it and I ended up actually using it for my other projects.
+This is a circular link-list template class that I developed during the time that I was taking Data Structure course. First I started making this class as a way of practicing implementing link-lists in C++. Later I started adding more features to it and I ended up actually using it for my other projects.
 
-This link list class works great on projects that elements are frequently need to be added or removed. Simillar to standard array or STL vector class, it supports element access/modification through index referencing. 
+This link list class works great on projects where elements are frequently needing to be added or removed. Similar to the standard array or STL vector class, it supports element access/modification through index referencing. 
 
 To declare a new variable use this syntax:
 
