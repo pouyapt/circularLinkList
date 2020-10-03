@@ -27,4 +27,9 @@ myList.end();
 ```
 
 Since it's circular, there is no way you can go out of bound. You can use litterly any integer number as index (including negative numbers) and it will automatically points to the right element. 
-For example, if you have 'myList' variable and asume you already added 10 elements to it, if you try to access the 11th element by using ```myList[10]``` syntax, it will simply point to the next element in the circule which is the first element and that is ```myList[0]```. Likewise using ```myList[17]``` is equvilent to ```myList[7]```. Using negative number you simply accessing the element from the reverse direction. ```myList[-2]``` in this case will points to ```myList[8]```
+For example, if you have 'myList' variable and asume you already added 10 elements to it, if you try to access the 11th element by using ```myList[10]``` syntax, it will simply point to the next element in the circule which is the first element and that is ```myList[0]```. Likewise using ```myList[17]``` is equvilent to ```myList[7]```. Using negative numbers you simply accessing the element from the reverse direction. ```myList[-2]``` in this case will points to ```myList[8]```
+
+This feature is very benefitial for the situationss that you are required to access your list's elements by random intervals. You don't have make a complecated code to aviod out-of-bound access.
+
+One problem of link-list data structure is the ineffeciency of accessing random elements. Therefore accessing an element in a link-list requires O(n) time complexity.  
+This class has an improvement over a typical link-list implementation. It saves pointers to the last two accessed elements. So to access a new element, it calculates its distance to the first element pointer as well as the saved pointers,and pick the closest pointer to traverse. Therefore the sequential access will be in O(1) time complexity. Also for some sorting algorithms such as merge sort, this feature helps.
