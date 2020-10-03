@@ -4,7 +4,7 @@ This is circular list class that I developed during the time that I was taking D
 
 ## Usage
 
-```C++
+```c++
 CircularList <datatype> myList;
 ```
 
