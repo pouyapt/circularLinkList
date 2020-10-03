@@ -15,7 +15,7 @@ to add an element to the end of the list:
 ```c++
 myList.push_back(data);
 ```
-to access the element use index refrencing:
+to access an element:
 
 ```c++
 myList[index];
